@@ -19,8 +19,8 @@ body {
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
   line-height: 1.7;
-  color: #111827; /* slate-900 */
-  background: radial-gradient(circle at top, #1f2937 0, #020617 40%, #020617 100%);
+  color: #f9fafb; /* white-ish text */
+  background: radial-gradient(circle at top, #111827 0, #020617 45%, #020617 100%);
 }
 
 /* Links */
@@ -48,9 +48,9 @@ a {
   top: 0;
   z-index: 20;
   backdrop-filter: blur(12px);
-  background: rgba(15, 23, 42, 0.92); /* dark navy */
-  border-bottom: 1px solid rgba(148, 163, 184, 0.35); /* slate-400 */
-  color: #e5e7eb; /* gray-200 */
+  background: rgba(2, 6, 23, 0.96); /* almost black */
+  border-bottom: 1px solid rgba(55, 65, 81, 0.7); /* gray-700 */
+  color: #e5e7eb;
 }
 
 .header-content {
@@ -63,8 +63,8 @@ a {
 .logo span {
   font-family: "Playfair Display", serif;
   font-weight: 600;
-  letter-spacing: 0.06em;
-  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  font-size: 0.9rem;
   text-transform: uppercase;
 }
 
@@ -88,7 +88,7 @@ a {
   bottom: -0.15rem;
   width: 0;
   height: 2px;
-  background: #fbbf24; /* amber-400 */
+  background: #f9fafb; /* white underline */
   transition: width 0.2s ease;
 }
 
@@ -106,8 +106,8 @@ a {
 /* =============== */
 
 .hero {
-  background: radial-gradient(circle at top left, #1d2436 0, #020617 60%);
-  color: #e5e7eb;
+  background: radial-gradient(circle at top left, #111827 0, #020617 60%);
+  color: #f9fafb;
   padding: 4.5rem 0 4rem;
 }
 
@@ -115,6 +115,14 @@ a {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 0.75rem;
 }
 
 .hero-text h1 {
@@ -127,12 +135,12 @@ a {
 .hero-text p {
   max-width: 36rem;
   font-size: 1rem;
-  color: #d1d5db;
+  color: #e5e7eb;
   margin-bottom: 1.75rem;
 }
 
 .hero-text strong {
-  color: #fbbf24;
+  color: #ffffff;
 }
 
 .hero-buttons {
@@ -159,25 +167,25 @@ a {
 }
 
 .btn.primary {
-  background: linear-gradient(to right, #fbbf24, #f59e0b);
-  color: #111827;
-  box-shadow: 0 10px 25px rgba(251, 191, 36, 0.2);
+  background: #f9fafb;      /* white button */
+  color: #020617;           /* near-black text */
+  border-color: #f9fafb;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.6);
 }
 
 .btn.primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 14px 32px rgba(251, 191, 36, 0.3);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.9);
 }
 
 .btn.secondary {
   background: transparent;
-  color: #e5e7eb;
-  border-color: rgba(148, 163, 184, 0.6);
+  color: #f9fafb;
+  border-color: #f9fafb;
 }
 
 .btn.secondary:hover {
   background: rgba(15, 23, 42, 0.9);
-  border-color: #e5e7eb;
 }
 
 .btn.disabled {
@@ -196,18 +204,18 @@ a {
 }
 
 .section {
-  background: #f9fafb; /* gray-50 */
+  background: #020617; /* very dark */
 }
 
 .section-alt {
-  background: #fef9f3; /* warm paper tone */
+  background: #030712; /* slightly lighter dark */
 }
 
 .section h2 {
   font-family: "Playfair Display", serif;
   font-size: 1.7rem;
   margin-bottom: 0.75rem;
-  color: #111827;
+  color: #f9fafb;
 }
 
 .section h3 {
@@ -215,11 +223,12 @@ a {
   margin-top: 1.4rem;
   margin-bottom: 0.25rem;
   font-weight: 600;
+  color: #f9fafb;
 }
 
 .section p {
   font-size: 0.97rem;
-  color: #374151; /* gray-700 */
+  color: #d1d5db;
 }
 
 .section-intro {
@@ -230,7 +239,7 @@ a {
 .coming-soon {
   margin-top: 1rem;
   font-size: 0.9rem;
-  color: #6b7280; /* gray-500 */
+  color: #9ca3af;
   font-style: italic;
 }
 
@@ -241,8 +250,9 @@ a {
 #payment-plan .container {
   border-radius: 0.75rem;
   padding: 2.2rem 1.75rem;
-  background: #ffffff;
-  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.12);
+  background: #030712;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.6);
+  border: 1px solid #111827;
 }
 
 /* =============== */
@@ -256,27 +266,29 @@ a {
 }
 
 .card {
-  background: #ffffff;
+  background: #111827;
   border-radius: 0.9rem;
   padding: 1.4rem 1.35rem;
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.09);
-  border: 1px solid rgba(148, 163, 184, 0.25);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7);
+  border: 1px solid #1f2937;
   transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
 }
 
 .card h3 {
   margin-bottom: 0.55rem;
   font-size: 1.02rem;
+  color: #f9fafb;
 }
 
 .card p {
   font-size: 0.94rem;
+  color: #d1d5db;
 }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.16);
-  border-color: rgba(251, 191, 36, 0.7); /* amber accent */
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.9);
+  border-color: #9ca3af;
 }
 
 /* =============== */
@@ -290,13 +302,13 @@ a {
 }
 
 .testimonials blockquote {
-  background: #ffffff;
+  background: #111827;
   border-radius: 0.9rem;
   padding: 1.15rem 1.25rem;
-  border-left: 4px solid #fbbf24;
-  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);
+  border-left: 4px solid #e5e7eb;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.7);
   font-size: 0.95rem;
-  color: #111827;
+  color: #f9fafb;
 }
 
 .quote-author {
@@ -304,7 +316,7 @@ a {
   margin-top: 0.55rem;
   font-weight: 600;
   font-size: 0.9rem;
-  color: #6b7280;
+  color: #9ca3af;
 }
 
 /* =============== */
@@ -327,7 +339,7 @@ a {
 .form-row label {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #111827;
+  color: #f9fafb;
 }
 
 .request-form input,
@@ -335,20 +347,31 @@ a {
 .request-form select {
   padding: 0.55rem 0.6rem;
   border-radius: 0.55rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #374151;
   font: inherit;
-  background: #f9fafb;
+  background: #020617;
+  color: #f9fafb;
   transition: border-color 0.15s ease, box-shadow 0.15s ease,
     background-color 0.15s ease;
+}
+
+.request-form input::placeholder,
+.request-form textarea::placeholder {
+  color: #6b7280;
 }
 
 .request-form input:focus,
 .request-form textarea:focus,
 .request-form select:focus {
   outline: none;
-  border-color: #f59e0b;
-  background: #ffffff;
-  box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.6);
+  border-color: #e5e7eb;
+  background: #030712;
+  box-shadow: 0 0 0 1px rgba(229, 231, 235, 0.7);
+}
+
+.request-form select {
+  color: #f9fafb;
+  background: #020617;
 }
 
 .checkbox-row {
@@ -364,7 +387,7 @@ a {
 .form-note {
   margin-top: 1rem;
   font-size: 0.85rem;
-  color: #6b7280;
+  color: #9ca3af;
 }
 
 /* =============== */
