@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Name | Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">
+        <!-- Change this to your brand name -->
+        <span>Your Brand Name</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#request">Request Services</a>
+        <a href="#calendar">Book a Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Custom Websites for Authors &amp; Creators</h1>
+          <p>
+            Pay toward a flat <strong>$995 project fee</strong> in manageable
+            monthly installments. Once your total is paid in full, I reserve your
+            slot and start building your custom site.
+          </p>
+          <div class="hero-buttons">
+            <a href="#request" class="btn primary">Request Services</a>
+            <a href="#calendar" class="btn secondary">Book a Call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAYMENT PLAN -->
+    <section id="payment-plan" class="section">
+      <div class="container">
+        <h2>How the Payment Plan Works</h2>
+
+        <h3>Project Fee</h3>
+        <p>
+          The total project fee for a standard website build is
+          <strong>$995</strong>. This covers strategy, design, development,
+          basic integrations, and launch support for one site.
+        </p>
+
+        <h3>Monthly Payments</h3>
+        <p>
+          You have the option to pay this fee in
+          <strong>monthly installments</strong> until the full $995 is reached.
+          Once your payment plan is set up, you can continue paying each month
+          until the total is complete.
+        </p>
+
+        <h3>Non-Refundable Payments</h3>
+        <p>
+          All payments made toward the $995 project fee are considered a
+          <strong>non-refundable deposit</strong>. These payments reserve space
+          in my schedule and cover project preparation, communication, and
+          planning time.
+        </p>
+        <p>
+          I begin design and development work on your project
+          <strong>after the full $995 has been paid</strong>.
+        </p>
+        <p>
+          If you decide to cancel or pause before the full amount is paid, any
+          payments already made will be retained and
+          <strong>will not be refunded</strong>. In some cases, at my
+          discretion, your paid amount may be applied as a credit toward a
+          future service within 12 months.
+        </p>
+        <p>
+          By starting a payment plan, you acknowledge and agree to these terms.
+        </p>
+
+        <p class="coming-soon">
+          <em>
+            Payment link coming soon. Once your payment platform is ready, a
+            "Start Payment Plan" button will appear here.
+          </em>
+        </p>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section section-alt">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <p class="section-intro">
+          Here are examples of the kind of layouts and sites I create for authors,
+          coaches, and small businesses. I focus on clean design, clear messaging,
+          and simple navigation.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Sample Layout – Author Homepage</h3>
+            <p>
+              A simple homepage for a fiction author featuring a hero section,
+              featured book, short bio, newsletter signup, and testimonials.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Sample Layout – Service-Based Business</h3>
+            <p>
+              A three-section layout with clear services list, "About" section,
+              and contact form to help clients get in touch quickly.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Sample Layout – Portfolio</h3>
+            <p>
+              A grid-style layout to showcase projects, with space for images,
+              descriptions, and links out to live sites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <p class="section-intro">
+          Here’s what clients and collaborators have said about working with me.
+        </p>
+
+        <div class="testimonials">
+          <!-- Replace these with real testimonials as you get them -->
+          <blockquote>
+            “Working with [Your Name] was easy and stress-free. They took my
+            vague ideas and turned them into a site that actually feels like my
+            brand.”
+            <span class="quote-author">— Client Name, Author</span>
+          </blockquote>
+
+          <blockquote>
+            “Clear communication, clean design, and everything delivered when
+            promised. I finally have a site I’m proud to send people to.”
+            <span class="quote-author">— Client Name, Business Owner</span>
+          </blockquote>
+
+          <p class="coming-soon">
+            <em>
+              If you’re an early client, your feedback may appear here (with
+              your permission).
+            </em>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REQUEST SERVICES FORM -->
+    <section id="request" class="section section-alt">
+      <div class="container">
+        <h2>Request for Website Services</h2>
+        <p class="section-intro">
+          Please fill out the form below with as much detail as you can. This
+          doesn’t start your payment plan yet—it simply helps me understand your
+          needs and see if we’re a good fit.
+        </p>
+
+        <!-- Basic HTML form. Later we can connect this to Formspree or another service. -->
+        <form class="request-form">
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="brand">Brand or Pen Name</label>
+            <input id="brand" name="brand" type="text" />
+          </div>
+
+          <div class="form-row">
+            <label for="bio">Short Bio for Your “About” Section</label>
+            <textarea
+              id="bio"
+              name="bio"
+              rows="3"
+              placeholder="Tell me who you are, who you serve, and what you create."
+            ></textarea>
+          </div>
+
+          <div class="form-row">
+            <label for="project-type">What type of site do you need?</label>
+            <select id="project-type" name="project-type">
+              <option>Author website</option>
+              <option>Coach / creator website</option>
+              <option>Business / service website</option>
+              <option>Portfolio</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="goals">
+              What is the main goal of this website?
+            </label>
+            <textarea
+              id="goals"
+              name="goals"
+              rows="2"
+              placeholder="Sell books, get clients, grow email list, etc."
+            ></textarea>
+          </div>
+
+          <div class="form-row">
+            <label for="style">
+              What kind of visual style are you drawn to?
+            </label>
+            <textarea
+              id="style"
+              name="style"
+              rows="2"
+              placeholder="Light and minimal, dark and bold, warm and cozy, colourful, etc."
+            ></textarea>
+          </div>
+
+          <div class="form-row">
+            <label for="colors">
+              Colours you like and colours you do NOT want on your site
+            </label>
+            <textarea id="colors" name="colors" rows="2"></textarea>
+          </div>
+
+          <div class="form-row">
+            <label for="links">
+              Social links, book/product links, or reference sites you love
+            </label>
+            <textarea
+              id="links"
+              name="links"
+              rows="3"
+              placeholder="Paste links here and tell me what you like about them."
+            ></textarea>
+          </div>
+
+          <div class="form-row">
+            <label for="timeline">
+              When would you ideally like your website to launch?
+            </label>
+            <input id="timeline" name="timeline" type="text" />
+          </div>
+
+          <div class="form-row checkbox-row">
+            <label>
+              <input type="checkbox" name="acknowledge" required />
+              I understand that payments toward the $995 project fee will be
+              treated as a non-refundable deposit, and that work begins after
+              the total has been paid in full.
+            </label>
+          </div>
+
+          <!-- NOTE: This form won't actually send anywhere yet. We'll wire it up later. -->
+          <button type="submit" class="btn primary" disabled>
+            Submit (Coming Soon)
+          </button>
+        </form>
+
+        <p class="form-note">
+          <strong>Note:</strong> This form is currently a placeholder. Once I
+          connect it to a form service, you’ll be able to submit it directly.
+        </p>
+      </div>
+    </section>
+
+    <!-- CALENDAR -->
+    <section id="calendar" class="section">
+      <div class="container">
+        <h2>Book a Call</h2>
+        <p class="section-intro">
+          Want to talk through your project before committing? Soon you’ll be
+          able to book a free 15–20 minute discovery call using the calendar
+          here.
+        </p>
+
+        <!-- Later: paste your Calendly or other calendar embed here -->
+        <p class="coming-soon">
+          <em>Calendar integration coming soon.</em>
+        </p>
+
+        <p>
+          <!-- Placeholder button -->
+          <a href="#" class="btn secondary disabled">Open Calendar (Coming Soon)</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        © <span id="year"></span> Your Brand Name. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
